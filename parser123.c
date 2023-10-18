@@ -57,7 +57,7 @@ char *findCmdInPath(info_t *data, char *pathString, char *command)
 
 	if (!pathString)
 		return (NULL);
-	if ((_strlen(command) > 2) && startsWith(command, "./"))
+	if ((_strlen(command) > 2) && starts_with(command, "./"))
 	{
 		if (isCommand(data, command))
 			return (command);
